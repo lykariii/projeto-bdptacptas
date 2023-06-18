@@ -11,7 +11,7 @@ export default async function Home() {
  console.log(produto)
   return (
     <div className={styles.body2}>
-    <main> <Link href="/cadastro" className='voltar'> CADASTRAR </Link>
+    <main><button className={styles.button2}> <Link href="/cadastro" className='voltar'> Cadastrar </Link></button>
     <div className={styles.container}>
 {produto.map(produto => (
         <div className={styles.grid} key={produto.id}>

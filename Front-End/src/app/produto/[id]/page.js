@@ -1,4 +1,5 @@
 'use client'
+
 import { useRouter } from "next/navigation";
 
 export default async function Produto({ params }) {
@@ -7,7 +8,7 @@ export default async function Produto({ params }) {
 
     const idJson = JSON.stringify(id);
 
-    const req = await fetch("http://localhost:3003/produto", {
+    const req = await fetch("http://localhost:3003/produtos", {
         method: "POST",
         cache: "no-cache",
         headers: { 'content-type': 'application/json' },
@@ -31,11 +32,10 @@ export default async function Produto({ params }) {
     }
     return (
         <div>
-            <p>{produto.id}</p>
-            <p>{produto.imagem}</p>
-            <p>{produto.titulo}</p>
             <p>{produto.preco}</p>
-            <button onClick={e => e.preventDefault(remover(produto.id))}>REMOVER</button>
+            <p>{produto.titulo}</p>
+            <button onClick={e => e.preventDefault(remover())}>REMOVER</button>
+
         </div>
 
     )

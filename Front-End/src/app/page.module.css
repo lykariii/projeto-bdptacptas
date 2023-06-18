@@ -82,11 +82,9 @@
  }
 
 .body2{
-  background: url("https://img.freepik.com/premium-vector/distressed-black-texture-distress-overlay-texture-subtle-grain-texture-overlay_664601-2086.jpg") center repeat; 
-}
-
-.wrapper {
-  display: flex;
+  background: url("https://img.freepik.com/premium-vector/distressed-black-texture-distress-overlay-texture-subtle-grain-texture-overlay_664601-2086.jpg") center repeat;
+  display: flex; 
+  justify-content: center;
 }
 
 .container{
