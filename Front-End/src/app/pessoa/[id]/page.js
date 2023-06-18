@@ -1,5 +1,4 @@
 'use client'
-
 import { useRouter } from "next/navigation";
 
 export default async function Produto({ params }) {
@@ -37,7 +36,6 @@ export default async function Produto({ params }) {
             <p>{produto.titulo}</p>
             <p>{produto.preco}</p>
             <button onClick={e => e.preventDefault(remover(produto.id))}>REMOVER</button>
-
         </div>
 
     )
