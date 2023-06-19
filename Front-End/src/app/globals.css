@@ -1,6 +1,5 @@
 *{
     margin: 0%;
-    
 }
 
 a{
@@ -10,4 +9,51 @@ a{
 
 img{
     max-width: 60%;
+    justify-content: center;
+}
+
+.box{
+    backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border-radius: 12px;
+      filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+      padding: 40px;
+  }
+
+p{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.fundo{
+    background: url("https://img.freepik.com/premium-vector/distressed-black-texture-distress-overlay-texture-subtle-grain-texture-overlay_664601-2086.jpg") center repeat;
+    display: flex;
+    grid-template-columns: 315px 315px 315px 315px;
+    padding: 20px; 
+    text-align: center;
+}
+
+.button{
+    display: block;
+    border: 1px solid white;
+    margin: 0 auto;
+    line-height: 28pt;
+    border-radius: 12px;
+    background: none;
+    color: white;
+    width: 100%;
+    backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);   
+  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+}
+
+.button:hover{
+    cursor: pointer;
 }
