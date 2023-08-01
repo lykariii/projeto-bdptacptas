@@ -20,7 +20,7 @@ export default async function Produto({ params }) {
     const remover = () => {
         console.log(idJson)
         try {
-            fetch("http://localhost:3003/produto", {
+            fetch("http://projeto-bdptacptas.vercel.app/produto", {
                 method: "DELETE",
                 headers: { 'content-type': 'application/json' },
                 body: idJson
